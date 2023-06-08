@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--<link rel="stylesheet" href="./style.css" />-->
+		<title>Document</title>
+	</head>
+	<body>
+		<h1> Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+		</h1>
+		<script>
+			//1.Описуємо і вводимо значення данних
+		let costAllProduct1 = parseInt(prompt('Введіть вартість товару 1 ', '0'))
+		let costAllProduct2 = parseInt(prompt('Введіть вартість товару 2 ', '2'))
+		let costAllProduct3 = parseInt(prompt('Введіть вартість товару 3 ', '4'))
+		let numberProduct1 = parseInt(prompt('Введіть кількість товару 1 ', '1'))
+		let numberProduct2 = parseInt(prompt('Введіть кількість товару 2 ', '3'))
+		let numberProduct3 = parseInt(prompt('Введіть кількість товару 3 ', '5'))
+			//2.Знаходимо результат
+		let costProduct1 = costAllProduct1 / numberProduct1
+		let costProduct2 = costAllProduct2 / numberProduct2
+		let costProduct3 = costAllProduct3 / numberProduct3
+		let payable = costAllProduct1 + costAllProduct2 + costAllProduct3
+		</script>
+		<div class="check">
+		<div>
+			<ol>
+				<li>Product 1</li>
+				<li>	<script>document.write(`Ціна товару 1 = ${costProduct1}`)</script></li>
+				<li>	<script>document.write(`Кількість товару 1 = ${numberProduct1}`)</script></li>
+				<li>	<script>document.write(`Загалом 1 = ${costAllProduct1}`)</script></li>
+			</ol>
+		</div>
+			<div><ol>
+				<li>Product 2</li>
+				<li>	<script>document.write(`Ціна товару 2 = ${costProduct2}`)</script></li>
+				<li>	<script>document.write(`Кількість товару 2 = ${numberProduct2}`)</script></li>
+				<li>	<script>document.write(`Загалом 2 = ${costAllProduct3}`)</script></li>
+			</ol>
+		</div>
+			<div><ol>
+				<li> Product 3</li>
+				<li>	<script>document.write(`Ціна товару 3 = ${costProduct3}`)</script></li>
+				<li>	<script>document.write(`Кількість товару 3 = ${numberProduct3}`)</script></li>
+				<li>	<script>document.write(`Загалом 3 = ${costAllProduct3}`)</script></li>
+			</ol>
+		</div>
+		<div>
+			<p><script>document.write(`До сплати = ${payable}`)</script></p>
+		</div>
+		</div>
+	</body>
+</html>

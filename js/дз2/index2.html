@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача 0. Обчислити значення виразів: S1 = a + 12 + b S2 = Math.sqrt((a+b)/(2*a)) S3 = Math.cbrt(a + b)/c S4 =
+		Math.sin(a/-b)</h1>
+	<script>
+		//1.Описуємо і вводимо значення данних
+		let a = parseInt(prompt('Введіть значення a', '0'))
+		let b = parseInt(prompt('Введіть значення b', '1'))
+		let c = parseInt(prompt('Введіть значення c', '2'))
+
+		//2.Знаходимо результат
+		let S1 = a + 12 + b
+		let S2 = Math.sqrt((a + b) / (2 * a))
+		let S3 = Math.cbrt(a + b) / c 
+		let S4 = Math.sin(a/-b)
+
+		//3.Виводимо результат
+		document.write(`S1= ${S1}<br>`)
+		document.write(`S2= ${S2}<br>`)
+		document.write(`S3= ${S3}<br>`)
+		document.write(`S4= ${S4}<br>`)
+	</script>
+</body>
+
+</html>

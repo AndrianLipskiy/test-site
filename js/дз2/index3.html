@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+		</h1>
+		<script>
+			//1.Описуємо і вводимо значення данних
+			let num1=parseInt(prompt('Введіть число 1', '0'))
+			let num2=parseInt(prompt('Введіть число 2', '1'))
+			//2.Знаходимо результат
+			let sum = num1 + num2
+			let multipl = num1 * num2
+			let fraction = num1 / num2
+			//3.Виводимо результат
+			document.write(`Результат додавання = ${sum} <br>`)
+			document.write(`Результат множення = ${multipl} <br>`)
+			document.write(`Результат ділення = ${fraction} <br>`)
+		</script>
+	</body>
+</html>
